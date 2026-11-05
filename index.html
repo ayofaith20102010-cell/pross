@@ -297,7 +297,65 @@
         #jjj{
             margin-top: 70px;
         }
-       
+@media screen and (max-width: 480px) {
+    /* 1. Change 5-column grids to 1 or 2 columns so items aren't squished */
+    #beauty, #fragrances, #furniture, #groceries {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+        padding: 10px !important;
+    }
+
+    #result {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* 2. Scale down massive headline text sizes */
+    #bea2h, #fra2h, #fur2h, #gro2h {
+        font-size: 1.6rem !important;
+        text-align: center;
+    }
+
+    #bea1h, #fra1h, #fur1h, #gro1h {
+        font-size: 1rem !important;
+        margin-top: 30px !important;
+        padding: 20px !important;
+    }
+
+    /* 3. Fix the top announcement banner */
+    #ok {
+        font-size: 0.8rem !important;
+        letter-spacing: 2px !important;
+        padding: 15px 10px !important;
+        text-align: center;
+    }
+
+    /* 4. Reset hardcoded left margins & tiny widths on layout buttons */
+    #bealast, #fralast, #furlast, #grolast {
+        margin-left: 0 !important;
+        width: 90% !important;
+        margin: 20px auto !important;
+        display: block !important;
+        font-size: 1.2rem !important;
+        text-align: center;
+    }
+
+    #mix {
+        width: auto !important;
+        margin-left: 20px !important;
+        font-size: 1.5rem !important;
+    }
+
+    /* 5. Prevent massive images from clipping off the phone screen */
+    #imgs {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    #zamzing {
+        width: 95% !important;
+        height: auto !important;
+    }
+}
     </style>
 </head>
 <body>
