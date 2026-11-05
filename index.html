@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .alla{
+            position:sticky;
+            top: 0%;
+            z-index: 1000;
+            background-color: white;
+        }
+        .bea{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         padding: 15px;
+         border-radius: 4px;
+        }
+        #beauty{
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          gap: 20px;            
+          padding: 20px;        
+          overflow-x: scroll;   
+          scrollbar-width: none;
+        }
+        #bea1h{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            margin-top:80px;
+            padding: 40px;
+        }
+        #bea2h{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+        }
+        .fra{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 15px;
+        }
+        #fragrances{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            overflow-x:auto;
+            scrollbar-width: none;
+        }
+          #fra1h{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            margin-top:80px ;
+            padding: 40px;
+        }
+        #fra2h{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+        }
+        #fralast{
+           background-color: black;
+            color: white;
+            margin-left: 600px;
+              font-size: 2rem;
+            width: 20vw;
+        }
+        #fraall{
+            background-color: #efefef;
+        }
+         #fratit{
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #fraprice{
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #fraoldprice{
+            text-decoration: line-through;
+        }
+
+        .fur{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 15px;
+        }
+        #furniture{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            overflow-x:auto;
+            scrollbar-width: none;
+        }
+          #fur1h{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            margin-top:80px ;
+            padding: 40px;
+        }
+        #fur2h{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+        }
+        #furlast{
+           background-color: black;
+            color: white;
+            margin-left: 600px;
+              font-size: 2rem;
+            width: 20vw;
+        }
+        #furall{
+            background-color: #efefef;
+        }
+         #furtit{
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #furprice{
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #furoldprice{
+            text-decoration: line-through;
+        }
+        .gro{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 15px;
+             background-color: white;
+        }
+        #groceries{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            overflow-x:auto;
+            scrollbar-width: none;
+            background-color: white;
+        }
+          #gro1h{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            margin-top:80px ;
+            padding: 40px;
+            background-color: white;
+        }
+        #gro2h{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+            background-color: white;
+        }
+        #grolast{
+           background-color: black;
+            color: white;
+            margin-left: 600px;
+              font-size: 2rem;
+            width: 20vw;
+        }
+        #groall{
+            background-color: #efefef;
+        }
+         #grotit{
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+        #groprice{
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #grooldprice{
+            text-decoration: line-through;
+        }
+       #result{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 15px;
+       }
+        #imgs{
+            width: 25vw;
+            height: 50vh;
+            background-color:#f6f6f5;
+            gap: 50px;
+            justify-content: space-between;
+            padding: 20px;
+            border: none;
+        }
+        .bigin1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #beaall{
+            background-color: #efefef;
+        }
+        #beatit{
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #beaprice{
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #beaoldprice{
+            text-decoration: line-through;
+        }
+        #bealast{
+            background-color: black;
+            color: white;
+            margin-left: 600px;
+              font-size: 2rem;
+            width: 20vw;
+        }
+        #bealast:hover{
+            background-color:#efefef;
+            color: black;
+        }
+        #textchange{
+            font-size: 1.4rem;
+        }
+        .okall{
+ background-color: #de0303;
+ height: 10vh;
+        }
+        #ok{
+            font-size: 1.1rem;
+            color: white;
+            /* border: 1px solid yellow; */
+            padding: 25px;
+            padding-left: 70px;
+            letter-spacing: 5px;
+        }
+        #mix{
+            font-size: 2rem;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 3px;
+            width: 5vw;
+            padding: 30px;
+            margin-left: 60px;
+            border: none;
+            background-color: white;
+        }
+        #dem{
+            display: flex;
+            justify-content: space-between;
+            letter-spacing: 70px;
+        }
+        #getin{
+           display: flex;
+           justify-content: space-between;
+           width: 2.5vw;
+        }
+        #zamzing{
+            width: 70vw;
+            height: 70vh;
+            display: flex;
+            justify-self: center;
+            align-items: center;
+        }
+        #jjj{
+            margin-top: 70px;
+        }
+       
+    </style>
+</head>
+<body>
+     <div class="okall">
+    <div id="ok">
+        BLACK FRIDAY IS HERE. 2 DAYS TO GO
+    </div>
+    </div>
+
+    <div class="alla">
+    <div class="bigin1">
+        <p id="textchange">
+            <!-- Use our size guide to find your perfect fit — UK sizing applies,
+            Official PUMA, LACOSTE & GUESS Retailer in Nigeria.
+             100% Authentic Guaranteed -->
+        </p>
+    </div>
+
+    <div id="jjj">
+        <a href="./pros.html">
+            <button id="mix">The Mix</button>
+        </a>
+       <span id="dem" style="position:absolute ;left: 300px;top: 190px;gap: 30px;" >
+<a href="./blackfriday.html">
+    <button style="border: none;font-size: 1.1rem;letter-spacing: 3px;background-color: white;">BLACK FRIDAY</button>
+</a>
+<a href="./groceries.html">
+    <button style="border: none;font-size: 1.1rem;letter-spacing: 3px;background-color: white;">GROCERIES</button>
+    </a>
+    <a href="./beauty.html">
+    <button style="border: none;font-size: 1.1rem;letter-spacing: 3px;background-color: white;">BEAUTY</button>
+    </a>
+    <a href="./fragrances.html">
+    <button style="border: none;font-size: 1.1rem;letter-spacing: 3px;background-color: white;">FRAGRANCES</button>
+    </a>
+ <a href="./furnitures.html">
+    <button style="border: none;font-size: 1.1rem;letter-spacing: 3px;background-color: white;">FURNITURES</button>
+    </a>
+
+     <div style="display: flex;gap: 10px;font-size: 2rem;">
+     <select id="currencySelect">
+    <option value="NGN">NGN ₦</option>
+    <option value="USD">USD $</option>
+    <option value="GBP">GBP £</option>
+  </select>
+
+  
+  <div class="icon">👤</div>
+  <div class="icon">🔍</div>
+  <div class="icon">👜</div>
+  </div>
+
+</span>
+
+    </div>
+    </div>
+
+ <div>
+       <img  id="zamzing" >
+   </div>
+
+   <div id="result">
+
+   </div>
+<div id="beaall">
+<div id="bea1h">
+UP TO 70% OFF
+</div>
+<div id="bea2h">
+FULL HEART. FULL CART. BLACK FRIDAY BY PUMA
+</div>
+
+    <div id="beauty">
+
+    </div>
+
+    <a href="./beauty.html">
+        <button id = "bealast"> shop the sale </button>
+
+    </a>
+
+
+<div id="fraall">
+<div id="fra1h">
+UP TO 70% OFF
+</div>
+<div id="fra2h">
+MAKE A STATEMENT. OWN THE DEALS. BLACK FRIDAY BY GUESS 
+</div>
+
+    <div id="fragrances">
+
+    </div>
+<a href="./fragrances.html">
+        <button id = "fralast"> shop the sale </button>
+
+    </a>
+    
+
+    <div id= "furall">
+<div id="fur1h">
+UP TO 70% OFF
+</div>
+<div id="fur2h">
+ICONIC STYLE. UNBEATABLE DEALS. BLACK FRIDAY BY LACOSTE
+</div>
+
+    <div id="furniture">
+
+    </div>
+<a href="./furniture.html">
+        <button id = "fralast"> shop the sale </button>
+
+    </a>
+
+   <div id="groall">
+<div id="gro1h">
+UP TO 70% OFF
+</div>
+<div id="gro2h">
+MAKE A STATEMENT. OWN THE DEALS. BLACK FRIDAY BY GUESS 
+</div>
+    <div id="groceries">
+
+    </div>
+
+    <a href="./groceries.html">
+        <button id = "grolast"> shop the sale </button>
+
+    </a>
+    </div>
+
+    <!-- <div id="furspe">
+
+    </div> -->
+
+    <script src="pros.js"></script>
+</body>
+</html>

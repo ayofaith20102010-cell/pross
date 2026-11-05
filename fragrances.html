@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         .fra{
+            display: flex;
+            flex-direction: column;
+        }
+        #fragrances{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            overflow-x:auto;
+            scrollbar-width: none;
+        }
+          #fra1h{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            margin-top:80px ;
+            padding: 40px;
+        }
+        #fra2h{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+        }
+        #fralast{
+           background-color: black;
+            color: white;
+            margin-left: 600px;
+              font-size: 2rem;
+            width: 20vw;
+        }
+        #fraall{
+            background-color: #efefef;
+        }
+         #fratit{
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #fraprice{
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #fraoldprice{
+            text-decoration: line-through;
+        }
+         #mix{
+            font-size: 2rem;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 3px;
+            width: 5vw;
+            padding: 30px;
+            margin-left: 60px;
+            border: none;
+            background-color: white;
+        }
+        #dem{
+            display: flex;
+            justify-content: space-between;
+            letter-spacing: 70px;
+        }
+        #imgs{
+            width: 25vw;
+            height: 50vh;
+            background-color: white;
+            gap: 50px;
+            justify-content: space-between;
+            padding: 20px;
+        }
+         #jjj{
+            margin-top: 70px;
+        }
+    </style>
+
+</head>
+<body>
+
+     <div class="bigin1">
+        <p id="textchange">
+            <!-- Use our size guide to find your perfect fit — UK sizing applies,
+            Official PUMA, LACOSTE & GUESS Retailer in Nigeria.
+             100% Authentic Guaranteed -->
+        </p>
+    </div>
+
+    <div>
+        <a href="./pros.html">
+            <button id="mix">The Mix</button>
+        </a>
+       <span id="dem" style="position:absolute ;left: 300px;top: 190px;gap: 30px;" >
+<a href="./blackfriday.html">
+    <button style="border: none;font-size: 1.1rem;letter-spacing: 3px;background-color: white;">BLACK FRIDAY</button>
+</a>
+<a href="./newin.html">
+    <button style="border: none;font-size: 1.1rem;letter-spacing: 3px;background-color: white;">NEW IN</button>
+    </a>
+    <a href="./beauty.html">
+    <button style="border: none;font-size: 1.1rem;letter-spacing: 3px;background-color: white;">BEAUTY</button>
+    </a>
+    <a href="./fragrances.html">
+    <button style="border: none;font-size: 1.1rem;letter-spacing: 3px;background-color: white;">FRAGRANCES</button>
+    </a>
+ <a href="./furnitures.html">
+    <button style="border: none;font-size: 1.1rem;letter-spacing: 3px;background-color: white;">FURNITURES</button>
+    </a>
+
+     <div style="display: flex;gap: 10px;font-size: 2rem;">
+     <select id="currencySelect">
+    <option value="NGN">NGN ₦</option>
+    <option value="USD">USD $</option>
+    <option value="GBP">GBP £</option>
+  </select>
+
+  
+  <div class="icon">👤</div>
+  <div class="icon">🔍</div>
+  <div class="icon">👜</div>
+  </div>
+
+</span>
+
+    </div>
+
+
+    <div id="fraall">
+<div id="fra1h">
+UP TO 70% OFF
+</div>
+<div id="fra2h">
+ICONIC STYLE. UNBEATABLE DEALS. BLACK FRIDAY BY LACOSTE
+</div>
+
+    <div id="fragrances">
+
+    </div>
+<a href="./fragrances.html">
+        <button id = "fralast"> shop the sale </button>
+
+    </a>
+
+    <script src="pros.js"></script>
+
+</body>
+</html>

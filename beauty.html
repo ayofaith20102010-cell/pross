@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .bea{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        #beauty{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            overflow-x:auto;
+            scrollbar-width: none;
+        }
+        #bea1h{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            margin-top:80px ;
+            padding: 40px;
+        }
+        #bea2h{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+        }
+        #bealast{
+            font-size: 2rem;
+            width: 20vw;
+        }
+         .bigin1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #beaall{
+            background-color: #efefef;
+        }
+        #beatit{
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #beaprice{
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #beaoldprice{
+            text-decoration: line-through;
+        }
+        #bealast{
+            width: 10.5vw;
+            height: 8vh;
+            display: flex;
+            justify-self: center;
+            align-self: center;
+            text-align: center;
+            padding: 7px;
+            background-color: black;
+            color: white;
+        }
+        #bealast:hover{
+            background-color:#efefef;
+            color: black;
+        }
+          #imgs{
+            width: 25vw;
+            height: 50vh;
+            background-color: white;
+            gap: 50px;
+            justify-content: space-between;
+            padding: 20px;
+        }
+         #mix{
+            font-size: 2rem;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 3px;
+            width: 5vw;
+            padding: 30px;
+            margin-left: 60px;
+            border: none;
+            background-color: white;
+        }
+        #dem{
+            display: flex;
+            justify-content: space-between;
+            letter-spacing: 70px;
+        }
+        #getin{
+           display: flex;
+           justify-content: space-between;
+           width: 2.5vw;
+        }
+         #jjj{
+            margin-top: 70px;
+        }
+        #check{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            justify-content: space-around;
+        }
+        #first{
+            font-size:1.3rem ;
+            letter-spacing: 3px;
+        }
+        #first1{
+            font-size: 1.15rem;
+            width: 16vw;
+            display: flex;
+            justify-self: center;
+            align-items: center;
+        }
+          #second{
+            font-size:1.3rem ;
+             letter-spacing: 3px;
+        }
+        #second1{
+            font-size: 1.15rem;
+            width: 16vw;
+             display: flex;
+            justify-self: center;
+            align-items: center;
+        }
+          #third{
+            font-size:1.3rem ;
+             letter-spacing: 3px;
+        }
+        #third1{
+            font-size: 1.15rem;
+            width: 16vw;
+             display: flex;
+            justify-self: center;
+            align-items: center;
+        }
+          #fourth{
+            font-size:1.3rem ;
+             letter-spacing: 3px;
+        }
+        #fourth1{
+            font-size: 1.15rem;
+            width: 18vw;
+             display: flex;
+            justify-self: center;
+            align-items: center;
+        }
+        #sumlst{
+            margin-top: 50px;
+        }
+        #iii{
+            font-size: 1.5rem;
+        }
+        #lll{
+            font-size: 1.15rem;
+            width: 20vw;
+        }
+        #inp{
+            width: 18vw;
+            height: 6vh;
+        }
+        #sub{
+            width: 10vw;
+            height: 6vh;
+        }
+</style>
+
+</head>
+<body>
+
+
+ <div class="bigin1">
+        <p id="textchange">
+            <!-- Use our size guide to find your perfect fit — UK sizing applies,
+            Official PUMA, LACOSTE & GUESS Retailer in Nigeria.
+             100% Authentic Guaranteed -->
+        </p>
+    </div>
+
+    <div>
+        <a href="./pros.html">
+            <button id="mix">The Mix</button>
+        </a>
+       <span id="dem" style="position:absolute ;left: 300px;top: 190px;gap: 30px;" >
+<a href="./blackfriday.html">
+    <button style="border: none;font-size: 1.1rem;letter-spacing: 3px;background-color: white;">BLACK FRIDAY</button>
+</a>
+<a href="./newin.html">
+    <button style="border: none;font-size: 1.1rem;letter-spacing: 3px;background-color: white;">NEW IN</button>
+    </a>
+    <a href="./beauty.html">
+    <button style="border: none;font-size: 1.1rem;letter-spacing: 3px;background-color: white;">BEAUTY</button>
+    </a>
+    <a href="./fragrances.html">
+    <button style="border: none;font-size: 1.1rem;letter-spacing: 3px;background-color: white;">FRAGRANCES</button>
+    </a>
+ <a href="./furnitures.html">
+    <button style="border: none;font-size: 1.1rem;letter-spacing: 3px;background-color: white;">FURNITURES</button>
+    </a>
+
+     <div style="display: flex;gap: 10px;font-size: 2rem;">
+     <select id="currencySelect">
+    <option value="NGN">NGN ₦</option>
+    <option value="USD">USD $</option>
+    <option value="GBP">GBP £</option>
+  </select>
+
+  
+  <div class="icon">👤</div>
+  <div class="icon">🔍</div>
+  <div class="icon">👜</div>
+  </div>
+
+</span>
+
+    </div>
+
+
+   <div id="beaall">
+<div id="bea1h">
+UP TO 70% OFF
+</div>
+<div id="bea2h">
+FULL HEART. FULL CART. BLACK FRIDAY BY PUMA
+</div>
+
+    <div id="beauty">
+
+    </div>
+
+
+    <div id="check">
+        <div>
+        <div id="first">
+            DELIEVERY WORLDWIDE
+        </div>
+        <div id="first1">
+            Enjoy fast, reliable shipping on all orders - no matter where you are
+        </div>
+        </div>
+
+        <div>
+        <div id="second">
+           SATISFIED OR RETURNED
+        </div>
+        <div id="second1">
+           Not in love? Return your item hassle-free within 14 days
+        </div>
+        </div>
+
+         <div>
+        <div id="third">
+          TOP-NOTCH SUPPORT
+        </div>
+        <div id="third1">
+           Our team is here to help you with any questions or concerns
+        </div>
+        </div>
+
+          <div>
+        <div id="fourth">
+          SECURE PAYMENTS
+        </div>
+        <div id="fourth1">
+           Shop with confidence. All transactions are encrypted and protected
+        </div>
+        </div>
+
+    </div>
+    
+
+    <div sumlst>
+        <div id="iii">
+            Newsletter
+        </div>
+        <div id="lll">
+            Sign up to our newsletter for updates on new arrivals, discounts, sales + more
+        </div>
+
+        <input id="inp" type="email" placeholder="E-mail">
+          <div>
+        <button id="sub">submit</button>
+        </div>
+    </div>
+
+    <script src="pros.js"></script>
+</body>
+</html>
